@@ -39,19 +39,31 @@ const Flow = () => {
           )}
         </div>
       </div>
-      <div className="hidden md:flex px-32 items-center text-white justify-between   text-lg py-3 bg-sky-900 text-center">
+
+      <div className="hidden md:flex px-32 items-center  text-white justify-between   text-lg  bg-orange-500 capitalize text-center">
      <div className="flex gap-x-6">
      <h1>hello</h1>
         <h1>hello</h1>
         <h1>hello</h1>
         <h1>hello</h1>
-        <div className="dropdown">
-  <label tabIndex={0} className=" ">Click</label>
-  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-    <li><a>Item 1</a></li>
-    <li><a>Item 2</a></li>
-  </ul>
-</div>
+       
+   
+      <ul className="menu  z-30 absolute translate-x-52  w-fit rounded-box">
+  
+  <li>
+    <details open>
+      <summary>Parent</summary>
+      <ul className="bg-white text-black">
+        <li><a>level 2 item 1</a></li>
+        <li><a>level 2 item 2</a></li>
+       
+      </ul>
+    </details>
+  </li>
+  
+</ul>
+    
+
         <h1>hello</h1>
         <h1>hello</h1>
      </div>
@@ -59,6 +71,8 @@ const Flow = () => {
         <button className="bg-fuchsia-900 py-1  px-4">connect </button>
        </div>
       </div>
+
+      
     </>
   );
 };
